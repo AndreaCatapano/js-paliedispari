@@ -1,8 +1,6 @@
-const userInput = prompt("Inserisci la tua parola")
+const userInput = prompt("Inserisci la tua parola").toLowerCase();
 
-const reverseUserInput = isWordPalindrome(userInput);
-
-const isPalindrome = userInput === reverseUserInput; 
+const isPalindrome = userInput === isWordPalindrome(userInput); 
 
 if(isPalindrome){
     console.log(`${userInput} è una parola palindroma`);
@@ -10,9 +8,12 @@ if(isPalindrome){
     console.log(`${userInput} NON è una parola palindroma`);
 }
 
- function isWordPalindrome (userInput){
-    const splitString = userInput.split("");
-    const reverseArray = splitString.reverse();
-    const joinArray = reverseArray.join("");
-    return joinArray
- }
+ function isWordPalindrome(userInput) {
+    let reversedString = "";
+    
+    for (let i = userInput.length - 1; i >= 0; i--) {
+        reversedString += userInput[i];
+    }
+
+    return reversedString;
+}
