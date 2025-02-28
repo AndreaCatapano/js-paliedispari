@@ -38,7 +38,7 @@ do {
         }
     } else {
         isInputValid = true; 
-        alert("Tentativi finiti, aggiorna la pagina per riprovare")
+        alert("Tentativi finiti, aggiorna la pagina per riprovare");
     }
 } while (!isInputValid)
 

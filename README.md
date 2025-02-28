@@ -32,3 +32,24 @@
        - Chiediamo all'utente di riprovare
 
 
+--- 
+
+
+### Problema 
+
+- Chiedere all’utente di inserire una parola
+- Creare una funzione per capire se la parola inserita è palindroma
+
+
+### Soluzione 
+
+
+- Creiamo una variabile con l'input del utente 
+- Dividiamo la parola per singola lettera (creando un array).
+- Invertiamo gli elementi del array 
+- Ricongiungiamo gli elementi del array in una singola parola 
+- Verifichiamo se l'input del utente è uguale alla parola ricongiunta con gli elementi inversi 
+- Se sono uguali 
+  - Comunichiamo all'utente che la parola è palindroma 
+- Altrimenti 
+  - Comunichiamo che non è palindroma
